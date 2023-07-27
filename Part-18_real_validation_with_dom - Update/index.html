@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Validation with Dom</title>
+    <style>
+        #submit{
+            margin-top: 2rem;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 0.3rem;
+            font-size: 1.5rem;
+        }
+        h1{ 
+            text-decoration: underline;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="./home.html" onsubmit="return validate()">
+        <h1>Real Validation with Dom</h1>
+
+        <h3>Enter Username</h3>
+        <input id="uname" type="text" placeholder="Username" > 
+
+        <h3>Enter Password</h3>
+        <input id="pass" type="password" placeholder="Password" > 
+
+        <h3>Enter Age</h3>
+        <input id="age" type="number" placeholder="Age"> 
+
+        <h3>Enter Mobile Number</h3>
+        <input id="mobile" type="number" placeholder="Mobile Number"> 
+
+        <input id="submit" type="submit" value="Submit" >
+    </form>
+        
+    
+
+    <script src="./validation.js"></script>
+</body>
+</html>

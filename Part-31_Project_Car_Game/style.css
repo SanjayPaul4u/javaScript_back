@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* height: 98vh; */
+    width: 100%;
+    min-height: 800px;
+    background-color: blue;
+    background-image: linear-gradient(45deg, grey 50%, black 50%);
+}
+#game{
+    height: 500px;
+    width: 390px;
+    border: 2px solid white;
+    margin: 1rem auto;
+    background: url("./road.png");
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+}
+#blueCarYel{
+    height: 100px;
+    width: 130px;
+    background-color: blue;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    animation: mover 1s linear infinite;
+}
+#blueCarYel img{
+    height: 100px;
+}
+@keyframes mover {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 501px;
+    }
+}
+#redCarBla img{
+    /* position: relative; */
+    left: -100px;
+}
+
+ #redCarBla{
+    height: 100px;
+    width: 130px;
+    background-color: red;
+    position: relative;
+    top: 250px;
+    left: 130px;
+    text-align: center;
+}
+#redCarBla img{
+    height: 100px;
+}
+
+/*SECOND STEP: RESULT DIV STYLE 📌 */
+#result{
+    height: 300px;
+    width: 390px;
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin: 1rem auto;
+    text-align: center;
+    display: none;
+}
+#btn{
+    font-size: 1.5rem;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: red;
+    cursor: pointer;
+}

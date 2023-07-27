@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: rgb(168, 79, 79);
+    background-image: linear-gradient(to left top, red, yellow, blue);
+    height: 98vh;
+    width: 100%;
+    
+}
+#gameDiv{
+    width: 40rem;
+    height: 50rem;
+    border: 0.2rem solid black;
+    background: url("./seiser-alm-g65162fd2c_1280.jpg");
+    /* object-fit: cover; */
+    background-size: cover;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+#blockDiv{
+    height: 50rem;
+    width: 5rem;
+    background-color: blue;
+    left: 20rem;
+    position: relative;
+    animation: block 3s linear infinite;
+}
+@keyframes block{
+    0%{
+        left: 40rem;
+    }
+    100%{
+        left: -5rem;
+    }
+}
+#holeDiv{
+    width: 5rem;
+    height: 15rem;
+    background-color: yellow;
+    position: relative;
+    left: 40rem;
+    top: -50rem;
+    animation: block 3s linear infinite;
+}
+#birdDiv{
+    position: fixed;
+    top: 10rem;
+    height: 5rem;
+    width: 5rem;
+}
+#birdDiv img{
+    height: 10rem;
+    width: 10rem;
+}
+
+/* Result div styling */
+#result{
+    margin: 1rem auto;
+    height: 20rem;
+    width: 50rem;
+    background-color: rgb(93, 61, 61);
+    color: white;
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+
+    display: none;
+}
+#btn{
+    padding: 0.5rem 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    margin: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#text{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}

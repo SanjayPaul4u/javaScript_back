@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in js</title>
+    <style>
+        .images{
+            height: 15rem;
+            width: 15rem;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation in JS</h1>
+    <img src="https://cdn.pixabay.com/photo/2023/07/04/21/22/fritillary-butterfly-8107096_640.jpg" alt="error" id="imgId" class="images"><br>
+    <input type="button" value="Fade-in" onclick="fadein()">
+    <input type="button" value="Fade-out" onclick="fadeout()">
+
+    <!-- by on mouse event -->
+    <!-- <img src="https://cdn.pixabay.com/photo/2023/07/04/21/22/fritillary-butterfly-8107096_640.jpg" alt="error" id="imgId" class="images" onmouseover="fadein()" onmouseout="fadeout()"><br> -->
+
+
+    <script src="./animation.js"></script>
+</body>
+</html>

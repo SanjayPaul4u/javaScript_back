@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On mouse event</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .main_heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    img{
+
+        height: 30%;
+        width: 30%;
+        object-fit: cover;
+        transition: all 0.5s;
+    }
+</style>
+<body>
+    <div class="main_heading">
+        <h1>This is main heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, corporis? Error id ullam neque sit alias fugiat recusandae quod odit adipisci architecto? Voluptates sed magni dignissimos. Nemo temporibus officia sed!</p>
+        <img src="https://cdn.pixabay.com/photo/2023/06/17/03/30/bird-8069126_1280.jpg" alt="error" id="img1" onmouseover="changeSize()" onmouseout="changeSize2()">
+    </div>
+
+
+    <script src="./onMouse.js"></script>
+</body>
+</html>
